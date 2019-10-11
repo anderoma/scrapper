@@ -16,13 +16,13 @@ end
 
 def perform
     i = 0
-    j = 3
+    display = 3
     while i < get_dep_name.length
         puts "----------------------------------------------------------------------------------------"
-        puts get_dep_name[j]
+        puts get_dep_name[display]
         puts "----------------------------------------------------------------------------------------"
         i = i + 1
-        j = j + 1
+        display = display + 1
     end
 end
 
