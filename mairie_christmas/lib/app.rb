@@ -16,7 +16,7 @@ def get_city_valdoise_url
     return city_urls
 end
 
-# get_townhall_email recupere les emails de chaques site de chaques mairie via les urls récupérés plus haut
+# get_city_email recupere les emails de chaques site de chaques mairie via les urls récupérés plus haut
 def get_city_email(url)
     url1 = "https://www.annuaire-des-mairies.com/"
         emails = Array.new
@@ -27,7 +27,7 @@ def get_city_email(url)
     return emails
 end
 
-# finalement get_townhall_names va trouver et mettre dans un tableau tous les nom des villes de tout le val d'oise
+# finalement get_city_names va trouver et mettre dans un tableau tous les nom des villes de tout le val d'oise
 def get_city_names
     valdoise_url = "http://annuaire-des-mairies.com/val-d-oise.html"
     names = Array.new
